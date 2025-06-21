@@ -7,7 +7,7 @@ const ProgramCard = () => {
       title: "Business Analyst Internship Program",
       description: "Master business analysis skills through real-world projects and industry mentorship. Learn data-driven decision making and strategic planning.",
       icon: <BarChart3 />,
-      image: "/lovable-uploads/0ea0b0d1-1a60-4f8e-b4c0-0b03a6cead10.png",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop",
       rating: 5,
       tags: ["Analytics", "Business Intelligence", "Strategy", "SQL", "Power BI"],
       color: "text-purple-600",
