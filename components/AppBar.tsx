@@ -3,15 +3,12 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Shield, Code, Database, BarChart3 } from 'lucide-react';
 import Logo from './Logo';
 import { useRouter } from 'next/navigation';
-import { useNavigationLoader } from './useNavigation';
-import LoadingScreen from './Loader';
 
 const AppBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const router = useRouter();
-    const isLoading = useNavigationLoader();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -40,7 +37,6 @@ const AppBar = () => {
 
     return (
         <>
-            {isLoading && <LoadingScreen />}
             <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
                 isScrolled 
                     ? 'bg-slate-900/90 backdrop-blur-md shadow-lg shadow-cyan-500/10 border-b border-cyan-500/20' 
