@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AppBar from "@/components/AppBar";
 import ContactSection from "@/components/ContactSection";
+import NextNProgress from 'nextjs-progressbar';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +29,19 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-
       >
-        <AppBar/>
+        {/* ✅ Add the progress bar at the very top */}
+        <NextNProgress 
+          color="#06b6d4" // Tailwind cyan-400
+          startPosition={0.3}
+          stopDelayMs={200}
+          height={3}
+          showOnShallow={true}
+        />
+
+        <AppBar />
         {children}
-        <ContactSection/>
+        <ContactSection />
       </body>
     </html>
   );
