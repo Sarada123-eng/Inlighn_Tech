@@ -69,7 +69,7 @@ const certificates = [
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {achievements.map((achievement, index) => (
+          {achievements.map((achievement) => (
             <div
               key={achievement.title}
               className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100"
@@ -84,7 +84,7 @@ const certificates = [
           ))}
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {certificates.map((certificate, index) => (
+          {certificates.map((certificate) => (
             <div
               key={certificate.id}
               className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
