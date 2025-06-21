@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Clock, Users, Target, Lightbulb, Award, BookOpen, Zap } from 'lucide-react';
+import { CheckCircle, Users, Target, Lightbulb, Award, BookOpen, Zap } from 'lucide-react';
 
 const SaveTimeSection = () => {
   const features = [

@@ -1,5 +1,4 @@
 "use client";
-import { LucideIcon } from 'lucide-react';
 import { useState } from 'react';
 
 interface CardProps {
@@ -14,7 +13,7 @@ interface CardProps {
   students?: number;
 }
 
-const Card = ({ title, description, image, rating, tags, color, duration = "3 months", price = "Free", students = 1000 }: CardProps) => {
+const Card = ({ title, description, image, rating, tags, duration = "3 months", price = "Free", students = 1000 }: CardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (

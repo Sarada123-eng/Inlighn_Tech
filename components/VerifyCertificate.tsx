@@ -2,11 +2,19 @@
 import { useState } from 'react';
 import { Shield, Search, CheckCircle, XCircle, Award, FileText } from 'lucide-react';
 
+interface CertificateData {
+  name: string;
+  program: string;
+  completionDate: string;
+  grade: string;
+  skills: string[];
+}
+
 export const VerifyCertificate = () => {
   const [internId, setInternId] = useState('');
   const [isVerifying, setIsVerifying] = useState(false);
   const [verificationResult, setVerificationResult] = useState<'valid' | 'invalid' | null>(null);
-  const [certificateData, setCertificateData] = useState<any>(null);
+  const [certificateData, setCertificateData] = useState<CertificateData | null>(null);
 
   const handleVerify = async () => {
     setIsVerifying(true);
