@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { Award, Trophy, Gift, Star, ArrowRight, Users, Target, Zap } from 'lucide-react';
+import {  Trophy, Gift, Star, ArrowRight, Users, Target, Zap } from 'lucide-react';
 
 export const InternComp = () => {
     const [currentMonth, setCurrentMonth] = useState('');
@@ -67,11 +67,11 @@ export const InternComp = () => {
                         </h1>
                         
                         <p className="text-xl md:text-2xl text-blue-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-                            Inlighn Tech is bringing you an <span className="font-semibold text-blue-400">EPIC opportunity</span> with the "Interns of the Month Challenge"! 🎉✨
+                            Inlighn Tech is bringing you an <span className="font-semibold text-blue-400">EPIC opportunity</span> with the &quot;Interns of the Month Challenge&quot;! 🎉✨
                         </p>
-                        
+                                                
                         <p className="text-lg md:text-xl text-blue-200 mb-12 max-w-3xl mx-auto">
-                            Every single month, we're recognizing <span className="font-bold text-blue-400">10 OUTSTANDING</span> interns who have shown exceptional dedication, innovation, and top-tier performance! 🏆
+                            Every single month, we&apos;re recognizing <span className="font-bold text-blue-400">10 OUTSTANDING</span> interns who have shown exceptional dedication, innovation, and top-tier performance! 🏆
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -177,7 +177,7 @@ export const InternComp = () => {
                         Ready to Show Your <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Exceptional Skills</span>?
                     </h2>
                     <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
-                        Don't miss out on this incredible opportunity to be recognized and rewarded for your outstanding performance.
+                        Don&apos;t miss out on this incredible opportunity to be recognized and rewarded for your outstanding performance.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="/programs">

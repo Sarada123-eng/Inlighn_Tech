@@ -155,7 +155,7 @@ export const LoginPage = () => {
                         </div>
                         {/* Sign Up Link */}
                         <div className="text-center text-sm">
-                            <span className="text-slate-400">Don't have an account? </span>
+                            <span className="text-slate-400">Don&#39;t have an account? </span>
                             <a href="#" className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors duration-300">
                                 Sign up here
                             </a>

@@ -130,7 +130,7 @@ const InternTestimonials = () => {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <div
                   key={testimonial.id}
                   className="w-full flex-shrink-0 px-4"
@@ -146,7 +146,7 @@ const InternTestimonials = () => {
 
                         {/* Testimonial Text */}
                         <p className="text-slate-200 text-lg leading-relaxed">
-                          "{testimonial.testimonial}"
+                          &quot;{testimonial.testimonial}&quot;
                         </p>
 
                         {/* Rating */}
