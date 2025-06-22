@@ -20,10 +20,10 @@ const AppBar = () => {
   }, []);
 
   const programs = [
-    { name: 'Cybersecurity', icon: Shield, color: 'text-red-400' },
-    { name: 'FullStack Development', icon: Code, color: 'text-green-400' },
-    { name: 'Data Science', icon: Database, color: 'text-blue-400' },
-    { name: 'Data Analysis', icon: BarChart3, color: 'text-purple-400' },
+    { name: 'Cybersecurity', icon: Shield, color: 'text-red-400', href: '/programs' },
+    { name: 'FullStack Development', icon: Code, color: 'text-green-400', href: '/programs' },
+    { name: 'Data Science', icon: Database, color: 'text-blue-400', href: '/programs' },
+    { name: 'Data Analysis', icon: BarChart3, color: 'text-purple-400', href: '/programs' },
   ];
 
   const navItems = [
@@ -98,6 +98,7 @@ const AppBar = () => {
                       <div className="space-y-3">
                         {programs.map((program) => (
                           <button
+                          onClick={() => router.push(program.href)}
                             key={program.name}
                             className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-slate-700/50 transition-all duration-300 group"
                           >
